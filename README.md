@@ -1,9 +1,9 @@
 # Gradiweb consumo de API
 
-## URL de previsualizacióm
+## Repositorio
 https://github.com/hugomendoza/gradiweb-product
 
-## Repositorio
+## URL de previsualización
 https://gradiweb-product.vercel.app/
 
 ## Para inicializar el proyecto:
