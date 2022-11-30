@@ -1,0 +1,19 @@
+.btn {
+  @apply font-bold text-center py-3 duration-200 transition-all;
+}
+
+.btn-primary {
+  @apply bg-black text-white border border-black;
+  @apply hover:bg-white hover:text-black;
+}
+
+.btn-secondary {
+  @apply bg-gray-300 text-black;
+  @apply hover:bg-black hover:text-white;
+}
+
+.swal2-styled.swal2-confirm {
+  @apply bg-black text-white border border-black;
+  @apply hover:bg-white hover:text-black;
+}
+

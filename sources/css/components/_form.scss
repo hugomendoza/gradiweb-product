@@ -1,0 +1,73 @@
+.form {
+  
+  &__group {
+    @apply flex items-center py-6 border-b border-gray-300 first:border-t;
+
+    span {
+      @apply text-xl mr-4;
+    }
+  }
+
+  &__checkboxes {
+    @apply flex flex-wrap;
+
+  }
+  
+  &__colors {
+    @apply w-9 h-9 p-1 flex relative items-center justify-center mr-3;
+
+    input[type="radio"] {
+      @apply appearance-none opacity-0 absolute;
+      
+      &:checked + label {
+        &::after {
+          @apply border-black;
+        }
+      }
+    }
+
+    label {
+      @apply w-5 h-5 rounded-full block cursor-pointer;
+      &::after {
+        content: "";
+        @apply transition-all duration-200 absolute inset-0 border-transparent border rounded-full;
+      }
+    }
+  }
+
+  &__sizes {
+    @apply relative flex flex-wrap space-x-4 space-y-4;
+
+    input[type="radio"] {
+      @apply appearance-none opacity-0 absolute;
+      
+      &:checked + label {
+        @apply border-black text-black;
+      }
+    }
+
+    label {
+      @apply w-9 h-9 flex items-center justify-center border border-gray-300 text-gray-300 transition-all duration-200 text-sm;
+    }
+  }
+
+  &__counter {
+    input {
+      @apply w-12 h-9 outline-none px-2 border-gray-300 text-center border;
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        @apply appearance-none m-0;
+      }
+    }
+  }
+
+  &__total {
+    p, span {
+      @apply text-lg;
+    }
+
+    span {
+      @apply font-bold;
+    }
+  }
+}

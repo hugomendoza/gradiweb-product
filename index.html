@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="/dist/css/main.css">
+</head>
+<body>
+
+  <div class="container mx-auto">
+    
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+      <p class="text-gray-400">catalog / sneackers / <span class="breadcrumb__title"></span></p>
+    </section>
+
+    <!-- Content Product -->
+    <section>
+      <div class="flex flex-wrap">
+
+        <!-- Carrusel -->
+        <article
+          class="w-full lg:w-1/2"
+          data-aos="fade-right"
+        >
+          <div class="carousel glide">
+            <div class="glide__track" data-glide-el="track">
+              <div class="glide__slides">
+              </div>
+            </div>
+            <div class="glide__bullets" data-glide-el="controls[nav]">
+            </div>
+          </div>
+        </article>
+
+        <!-- Product data -->
+        <article
+          class="w-full lg:w-1/2 px-6 md:px-12 content pb-10"
+          data-aos="fade-up"
+        >
+
+          <form
+            class="form"
+          >
+            <fieldset class="form__group form__group--colors">
+              <span>Color:</span>
+              <div class="form__checkboxes form__checkboxes--color">
+              </div>
+            </fieldset>
+            <fieldset class="form__group form__group--colors">
+              <span>Size:</span>
+              <div class="form__checkboxes form__checkboxes--sizes">
+              </div>
+            </fieldset>
+            <fieldset class="form__group justify-between">
+              <div class="form__counter">
+                <input
+                  type="number"
+                  min="0"
+                  name="quantity"
+                  id="quantity"
+                  class="form__number"
+                  value=""
+                  placeholder="0"
+                >
+              </div>
+              <div class="form__total">
+                <p>
+                  Total price: $<span class="price-product">0</span>
+                </p>
+              </div>
+            </fieldset>
+            <fieldset class="form__group space-x-4 border-none">
+              <button class="btn btn-secondary flex-1" type="button">Add to favourite</button>
+              <button class="btn btn-primary flex-1" type="submit">Add to cart</button>
+            </fieldset>
+          </form>
+          <p class="description text-gray-500"></p>
+        </article>
+      </div>
+    </section>
+  </div>
+
+  <!-- Main Bundle -->
+  <script src="./dist/js/main.bundle.js" type="module"></script>
+  <!-- <script>
+    $(".carousel").slick()
+  </scri> -->
+</body>
+</html>

@@ -1,0 +1,20 @@
+.header {
+  @apply pb-8;
+
+  &__subtitle,
+  &__discount {
+    @apply text-gray-400;
+  }
+
+  &__title {
+    @apply text-4xl font-bold my-3;
+  }
+
+  &__price {
+    @apply text-3xl font-medium flex items-start text-black;
+  }
+
+  &__discount {
+    @apply text-2xl line-through ml-3;
+  }
+}

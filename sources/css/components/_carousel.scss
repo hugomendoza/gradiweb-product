@@ -1,0 +1,22 @@
+.carousel {
+
+  &__figure {
+    @apply aspect-square relative;
+  }
+
+  &__image {
+    @apply inset-0 bg-cover bg-center w-full h-full;
+  }
+
+  .glide__bullets {
+    @apply relative -bottom-2;
+  }
+
+  .glide__bullet {
+    @apply w-3 h-3 bg-gray-200;
+
+    &--active {
+      @apply bg-black;
+    }
+  }
+}

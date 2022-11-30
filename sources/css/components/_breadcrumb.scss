@@ -1,0 +1,11 @@
+.breadcrumb {
+  @apply my-8 px-4 md:px-0; 
+
+  p {
+    @apply text-gray-400;
+  }
+
+  &__title {
+    @apply text-black font-medium;
+  }
+}
